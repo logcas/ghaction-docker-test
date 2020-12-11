@@ -6,7 +6,7 @@ WORKDIR /www/web-monitor
 
 COPY package.json /www/web-monitor/package.json
 RUN cd /www/web-monitor
-RUN npm i --production
+RUN npm i
 COPY . /www/web-monitor
 RUN npm run build
 
